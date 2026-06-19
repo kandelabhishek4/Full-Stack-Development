@@ -19,6 +19,24 @@
       font-family: Inter, Arial, Helvetica, sans-serif !important;
     }
 
+    /* Match this section's heading/paragraph sizes to the rest of the site.
+       Bootstrap's own h2/h3 font-size rules load after styles.css and would
+       otherwise override the site's design-system sizes, so !important is
+       used to restore them just within this demo section. */
+    .container.my-5 h2 {
+      font-size: clamp(1.45rem, 3vw, 2.15rem) !important;
+      color: var(--navy) !important;
+      font-weight: 700 !important;
+    }
+    .container.my-5 h3 {
+      font-size: 1.2rem !important;
+      color: #123d6b !important;
+    }
+    .container.my-5 p {
+      font-size: 1rem !important;
+      line-height: 1.65 !important;
+    }
+
     /* Demo navbar: no underline in any state, plus a clear active-page highlight */
     #demoNavbar .nav-link,
     #demoNavbar .navbar-brand {
