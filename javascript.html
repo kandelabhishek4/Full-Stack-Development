@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JavaScript | CET138 Portfolio</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CET138 Web Development portfolio assignment for University of Sunderland.">
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+  
+</head>
+<body>
+  <header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="CET138 Portfolio Home"><span class="brand-mark">C</span><span>CET138 Portfolio</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+    <ul id="primary-nav" class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="fullstack.html">Full Stack</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="bootstrap.html">Bootstrap</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+    </ul>
+  </nav>
+</header>
+  <main><section class="page-hero reveal">
+  <div class="page-hero-content">
+    <p class="kicker">CET138 Web Development</p>
+    <h1>JavaScript</h1>
+    <p>JavaScript adds interaction, logic, storage, and dynamic content to web pages.</p>
+  </div>
+  <div class="tech-card-logo js-logo" aria-label="JavaScript logo illustration"><span>JS</span></div>
+</section>
+<section class="content-card reveal"><h2>Overview</h2><p class="overview-lead">JavaScript is a high-level, interpreted programming language that adds interactive and dynamic behaviour to websites. Alongside HTML and CSS, it's one of the three core web technologies — handling logic and responding to user actions. Unlike HTML and CSS, which describe structure and appearance, JavaScript is a full programming language capable of making decisions, storing and processing data, and reacting to events as they happen, which is what allows a page to update itself instantly rather than reloading for every change. It runs directly in the browser on the frontend, but the same language, through environments like Node.js, can also power backend servers, making it one of the few technologies that can be used across the entire stack of a web application. This versatility, combined with a huge ecosystem of libraries and frameworks, is why JavaScript remains one of the most widely used programming languages in the world.</p><h3 class="overview-sub">The DOM</h3><p>On the frontend, JavaScript runs in the browser and manipulates the Document Object Model (DOM).</p><ul class="overview-list"><li>The DOM represents an HTML document as a tree of objects, with each element on the page available to JavaScript as something it can read or change.</li><li>JavaScript can change text, styles, and layout without reloading the page, which is what makes interfaces feel instant rather than waiting for a fresh page load each time.</li><li>Essential for forms, dashboards, and single-page applications, where content needs to update continuously in response to what the user is doing.</li></ul><h3 class="overview-sub">Variables &amp; Functions</h3><p>JavaScript supports multiple data types and reusable blocks of logic.</p><ul class="overview-list"><li>Data types: strings, numbers, booleans, arrays, objects, null, undefined, each suited to representing a different kind of value, from simple text to entire collections of information.</li><li><strong>let</strong> and <strong>const</strong> are preferred over <strong>var</strong> for better scope control, helping avoid bugs caused by variables leaking outside the block they were meant to stay in.</li><li>Functions keep code organised and reusable, letting the same block of logic run multiple times from different parts of a program instead of being duplicated.</li></ul><h3 class="overview-sub">Events &amp; Modern Features</h3><p>Event listeners let JavaScript respond to user actions like clicks, typing, and form submissions.</p><ul class="overview-list"><li>Arrow functions, template literals, and destructuring, modern syntax features that make JavaScript code shorter and easier to read.</li><li>Spread operators, classes, and modules, which help organise larger codebases and make copying or combining data more straightforward.</li><li>Promises and async/await for asynchronous code, allowing JavaScript to wait for things like server responses without freezing the rest of the page.</li></ul><h3 class="overview-sub">Fetch API &amp; Local Storage</h3><p>JavaScript can communicate with external servers and persist data in the browser.</p><ul class="overview-list"><li>Fetch API retrieves data, typically in JSON format, sending a request to a server and handling the response once it arrives.</li><li>Used for live data such as weather, users, or products, keeping a page up to date with information that changes outside of the website itself.</li><li>Local Storage saves preferences or tasks even after the browser closes, so information the user entered is still there the next time they visit.</li></ul><div class="overview-note">JavaScript plays a critical role in both frontend and backend development, making it essential for becoming a Full Stack Developer.</div></section>
+<section class="content-card reveal"><h2>Example 1: To-Do List</h2><form id="todo-form" class="todo-form"><label for="todo-input">New Task</label><div class="input-row"><input id="todo-input" type="text" placeholder="Enter a task" required><button class="btn primary" type="submit">Add Task</button></div></form><ul id="todo-list" class="todo-list"></ul><h3>Scenario</h3><p>A student can use a to-do list to record coursework tasks. Local Storage keeps tasks saved in the browser.</p></section>
+<section class="content-card reveal weather-section"><h2>Example 2: Weather Card</h2><p>Click the button to display weather data using an async function and JSON data.</p><button id="weather-btn" class="weather-button" type="button"><span>☁</span> Show Weather</button><div id="weather-card" class="weather-card"></div><h3>Scenario</h3><p>A travel website can show weather information before a user books a trip.</p></section><section class="content-card reveal references">
+  <h2>References</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+  </ul>
+</section></main>
+  <footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <strong>CET138 Assignment</strong>
+      <span>Web Development Portfolio</span>
+    </div>
+    <div class="footer-meta">
+      <span>University of Sunderland</span>
+      <span>Subject: Full Stack Development</span>
+      <span>© 2026 All Rights Reserved</span>
+    </div>
+  </div>
+</footer>
+  
+</body>
+</html>

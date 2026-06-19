@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML | CET138 Portfolio</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CET138 Web Development portfolio assignment for University of Sunderland.">
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+  
+</head>
+<body>
+  <header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="CET138 Portfolio Home"><span class="brand-mark">C</span><span>CET138 Portfolio</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+    <ul id="primary-nav" class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="fullstack.html">Full Stack</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="bootstrap.html">Bootstrap</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+    </ul>
+  </nav>
+</header>
+  <main><section class="page-hero reveal">
+  <div class="page-hero-content">
+    <p class="kicker">CET138 Web Development</p>
+    <h1>HTML</h1>
+    <p>HTML creates the structure, meaning, and accessible foundation of a web page.</p>
+  </div>
+  <div class="tech-card-logo html-logo" aria-label="HTML logo illustration">
+  <div class="logo-text">HTML</div>
+  <svg viewBox="0 0 128 144" aria-hidden="true"><path class="html-bg" d="M12 4h104l-10 116-42 14-42-14z"/><path class="html-side" d="M64 15h39l-8 96-31 10z"/><path class="html-five" d="M36 35h57l-2 17H55l1 13h33l-5 43-20 7-20-7-2-22h17l1 10 5 2 6-2 1-14H41z"/></svg>
+</div>
+</section>
+<section class="content-card reveal"><h2>Overview</h2><p class="overview-lead">HTML (HyperText Markup Language) is the standard markup language used to structure content on the web. It defines the meaning of elements such as headings, paragraphs, images, links, tables, and forms, working alongside CSS for styling and JavaScript for interactivity. Every website, no matter how visually complex, begins as an HTML document, since this is the layer that tells the browser what each piece of content actually is rather than just how it should appear. Learning HTML well means understanding not just how to write tags, but how to choose the right element for the right purpose, which makes pages easier to maintain, more accessible to assistive technology, and better understood by search engines. Because it forms the foundation that CSS styles and JavaScript brings to life, a solid grasp of HTML is the natural starting point for anyone learning web development.</p><h3 class="overview-sub">Document Structure</h3><p>Every HTML document follows the same basic structure.</p><ul class="overview-list"><li><code>&lt;!DOCTYPE html&gt;</code> — tells the browser this is HTML5, so the page renders using modern standards mode rather than an older, less consistent rendering mode.</li><li><code>&lt;head&gt;</code> — metadata, title, character encoding, linked files; nothing here is shown directly on the page, but it controls the tab title, search engine description, and which CSS or JavaScript files are connected.</li><li><code>&lt;body&gt;</code> — the visible content shown to users, including all text, images, forms, and other elements that make up the actual page.</li></ul><h3 class="overview-sub">Elements &amp; Attributes</h3><p>Content is organised using elements and tags, most with an opening and closing tag.</p><ul class="overview-list"><li>Example: <code>&lt;p&gt;Paragraph&lt;/p&gt;</code> — the opening tag starts the element and the closing tag ends it, with the content sitting in between.</li><li><strong>href</strong> attribute sets a link's destination, telling the browser which page, file, or section to open when the link is clicked.</li><li><strong>src</strong> attribute sets an image's source, pointing the browser to the file location so it knows what to display.</li></ul><h3 class="overview-sub">Semantic HTML</h3><p>HTML5 introduced semantic elements that clearly describe the purpose of content.</p><ul class="overview-list"><li><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> — mark out the page's top banner, navigation links, and primary content area, so each part of the layout has a clear, recognised role.</li><li><code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code> — group self-contained content, thematic sections, side content, and closing information, instead of relying on generic <code>&lt;div&gt;</code> tags.</li><li>Improves readability, SEO, and accessibility, since search engines and screen readers can understand the structure of the page rather than just a flat list of elements.</li></ul><h3 class="overview-sub">Forms &amp; Accessibility</h3><p>HTML provides built-in tools for collecting input and supporting all users.</p><ul class="overview-list"><li>Text, email, password fields, radio buttons, checkboxes, dropdowns — each input type is suited to a different kind of data, which keeps forms intuitive for users to fill in correctly.</li><li>Validation attributes: <code>required</code>, <code>minlength</code>, <code>type="email"</code> — these let the browser check user input automatically, catching obvious mistakes before the form is even submitted.</li><li>Descriptive <code>alt</code> text, labels, and ARIA attributes for screen readers, ensuring that users with visual or motor impairments can still understand and navigate the form.</li></ul><div class="overview-note">HTML also supports multimedia via <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> — a strong grasp of HTML is the essential first step toward becoming a Full Stack Developer.</div></section>
+<section class="content-card reveal"><h2>Example 1: Semantic Web Page</h2><div class="semantic-demo"><header><h3>Header Area</h3><nav><a href="#">Home</a><a href="#">Articles</a><a href="#">Contact</a></nav></header><main><article><h4>Article Title</h4><section><p>This article section contains the main content of the page.</p></section></article><aside><p>Related links and extra information appear inside the aside.</p></aside></main><footer>Footer Area</footer></div><h3>Scenario</h3><p>A blog or news website uses semantic HTML so content is organised clearly for users, screen readers, and search engines.</p></section>
+<section class="content-card reveal form-section"><h2>Example 2: Registration Form</h2><div class="example-header"><p>This form demonstrates labels, input types, dropdowns, radio buttons, checkboxes, and browser validation.</p><div class="badge-row"><span class="badge html-badge">HTML</span><span class="badge css-badge">CSS</span><span class="badge js-badge">JS</span></div></div><form class="form-demo modern-form"><div class="form-grid"><div class="form-group"><label for="name">Full Name</label><input id="name" type="text" placeholder="Enter full name" required></div><div class="form-group"><label for="email">Email Address</label><input id="email" type="email" placeholder="student@example.com" required></div></div><div class="form-grid"><div class="form-group"><label for="password">Password</label><input id="password" type="password" placeholder="Minimum 8 characters" minlength="8" required></div><div class="form-group"><label for="topic">Course Topic</label><select id="topic"><option>HTML</option><option>CSS</option><option>Bootstrap</option><option>JavaScript</option></select></div></div><fieldset class="choice-card"><legend>Study Level</legend><label class="option-row"><input type="radio" name="level" checked><span>Beginner</span></label><label class="option-row"><input type="radio" name="level"><span>Junior Developer</span></label></fieldset><label class="option-row agree-row"><input type="checkbox" required><span>I agree to submit this registration form.</span></label><button class="btn primary form-submit" type="submit">Submit Registration</button></form><h3>Scenario</h3><p>College registration pages, contact forms, and account sign-up pages use the same form structure.</p></section><section class="content-card reveal references">
+  <h2>References</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+  </ul>
+</section></main>
+  <footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <strong>CET138 Assignment</strong>
+      <span>Web Development Portfolio</span>
+    </div>
+    <div class="footer-meta">
+      <span>University of Sunderland</span>
+      <span>Subject: Full Stack Development</span>
+      <span>© 2026 All Rights Reserved</span>
+    </div>
+  </div>
+</footer>
+  
+</body>
+</html>

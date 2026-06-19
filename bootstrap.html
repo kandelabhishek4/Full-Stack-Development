@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Framework | CET138 Portfolio</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CET138 Web Development portfolio assignment for University of Sunderland.">
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Scoped to the Bootstrap demo section only — keeps Bootstrap components
+       visually consistent with the rest of the site's font, without touching
+       styles.css or any other page. !important ensures this overrides
+       Bootstrap's own font-family rules on the navbar, buttons, and form
+       controls (e.g. .navbar-brand, .nav-link, .btn, .form-control). */
+    .container.my-5,
+    .container.my-5 * {
+      font-family: Inter, Arial, Helvetica, sans-serif !important;
+    }
+
+    /* Demo navbar: no underline in any state, plus a clear active-page highlight */
+    #demoNavbar .nav-link,
+    #demoNavbar .navbar-brand {
+      text-decoration: none;
+    }
+    #demoNavbar .nav-link:hover,
+    #demoNavbar .nav-link:focus,
+    #demoNavbar .nav-link:active,
+    #demoNavbar .navbar-brand:hover,
+    #demoNavbar .navbar-brand:focus {
+      text-decoration: none;
+    }
+    #demoNavbar .nav-link.active {
+      color: #7952b3;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="CET138 Portfolio Home"><span class="brand-mark">C</span><span>CET138 Portfolio</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+    <ul id="primary-nav" class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="fullstack.html">Full Stack</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="bootstrap.html">Bootstrap</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+    </ul>
+  </nav>
+</header>
+  <main><section class="page-hero reveal">
+  <div class="page-hero-content">
+    <p class="kicker">CET138 Web Development</p>
+    <h1>Bootstrap Framework</h1>
+    <p>Bootstrap provides responsive grid classes and ready-made UI components for faster development.</p>
+  </div>
+  <div class="tech-card-logo bootstrap-logo" aria-label="Bootstrap logo illustration">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" width="112" height="112">
+    <rect width="112" height="112" rx="18" fill="#7952b3"/>
+    <path fill="#fff" d="M27 80V32h26.6c4.2 0 7.7.6 10.6 1.7 2.9 1.1 5.1 2.7 6.6 4.7 1.5 2 2.2 4.4 2.2 7.1 0 2.1-.5 4-1.5 5.6s-2.4 2.9-4.2 3.9c-1.8 1-3.9 1.6-6.2 1.9v.5c2.5.1 4.8.8 6.9 2s3.7 2.7 4.9 4.7 1.8 4.2 1.8 6.8c0 2.9-.8 5.5-2.3 7.7-1.5 2.2-3.8 3.9-6.7 5.2-2.9 1.2-6.5 1.9-10.8 1.9H27zm12.3-30.3h12.2c3.4 0 6-.7 7.8-2s2.6-3.2 2.6-5.5c0-2.4-.8-4.2-2.5-5.5-1.7-1.3-4.1-1.9-7.3-1.9H39.3v14.9zm0 21.4h13.3c3.7 0 6.6-.8 8.5-2.3s2.8-3.6 2.8-6.2c0-2.7-1-4.8-2.9-6.3-1.9-1.5-4.8-2.2-8.6-2.2H39.3v17z"/>
+  </svg>
+</div>
+</section>
+<section class="content-card reveal"><h2>Overview</h2><p class="overview-lead">Bootstrap is a popular open-source front-end framework for building responsive, mobile-first websites quickly. Originally developed by Twitter, it now powers a huge share of modern web projects with ready-made CSS classes, components, and JavaScript plugins. Rather than writing layout and component styling from scratch for every project, developers can rely on Bootstrap's pre-tested grid system and UI elements, which significantly speeds up development while still producing pages that look consistent and professional across different browsers and screen sizes. It is especially useful for prototyping, smaller projects, or teams that need to move fast without sacrificing responsiveness or accessibility. Because Bootstrap is built on plain HTML, CSS, and JavaScript, the skills learned while using it transfer directly to working with custom-built frameworks and design systems later on.</p><h3 class="overview-sub">Responsive Grid System</h3><p>Bootstrap's best-known feature is its 12-column grid, which divides the page into equal columns so layouts can adapt to any screen size.</p><ul class="overview-list"><li><strong>col-sm-</strong> for small screens such as large phones, keeping content readable once the viewport gets a little wider than a typical phone in portrait mode.</li><li><strong>col-md-</strong> for tablets and medium viewports, where there is enough room to show two or three columns side by side.</li><li><strong>col-lg-</strong> and <strong>col-xl-</strong> for laptops and desktops, allowing layouts to spread across more columns once there is ample horizontal space.</li></ul><h3 class="overview-sub">Mobile-First &amp; Utility Classes</h3><p>Styles are optimised for small screens first, then scaled up, which improves performance and usability across devices.</p><ul class="overview-list"><li>Utility classes for spacing, colour, and typography, such as margin and padding helpers, so common adjustments can be made directly in the HTML without writing extra CSS.</li><li>Alignment and display helpers without custom CSS, making it quick to centre, hide, or rearrange elements just by adding a class.</li><li>Consistent design tokens shared across components, which keeps colours, spacing, and sizing uniform throughout the whole site.</li></ul><h3 class="overview-sub">Pre-Built Components</h3><p>A wide library of ready components saves development time and keeps designs consistent.</p><ul class="overview-list"><li>Navigation bars, buttons, and cards, which arrive already styled and responsive, so they only need content rather than layout work from scratch.</li><li>Forms, modals, and alerts, each built with consistent spacing and styling so they fit visually with the rest of a Bootstrap-based page.</li><li>Carousels and dropdown menus, which would normally require custom JavaScript but come ready to use with just a few HTML classes and attributes.</li></ul><h3 class="overview-sub">JavaScript Interactivity</h3><p>Built-in plugins add interactivity using simple HTML data attributes instead of custom scripts.</p><ul class="overview-list"><li>Modals and collapsible menus, which can open, close, and animate without the developer writing any JavaScript themselves.</li><li>Tooltips and dropdowns, which appear and position themselves automatically near the element that triggered them.</li><li>Powered by <strong>data-bs-toggle</strong> and <strong>data-bs-target</strong> attributes, which tell Bootstrap's JavaScript which component to control and which element should respond to it.</li></ul><h3 class="overview-sub">Compatibility &amp; Considerations</h3><p>Bootstrap works consistently across Chrome, Firefox, Edge, and Safari, backed by strong community support and documentation.</p><div class="overview-note">Used without customisation, Bootstrap sites can look similar to one another — but applying custom CSS on top of the framework keeps designs unique while still benefiting from its speed and consistency.</div></section>
+<section class="container my-5 reveal"><h2 class="mb-4">Example 1: Responsive Cards and Alert</h2><div class="alert alert-info" role="alert">Bootstrap alerts are useful for showing messages to users.</div><div class="row g-4"><div class="col-md-4"><div class="card h-100 shadow-sm"><div class="card-body"><h3 class="h5">Portfolio Card</h3><p>Cards can present projects or services.</p><a class="btn btn-primary" href="#">View Project</a></div></div></div><div class="col-md-4"><div class="card h-100 shadow-sm"><div class="card-body"><h3 class="h5">Skills Card</h3><p>The grid keeps columns responsive.</p><a class="btn btn-outline-primary" href="#">View Skills</a></div></div></div><div class="col-md-4"><div class="card h-100 shadow-sm"><div class="card-body"><h3 class="h5">Contact Card</h3><p>Buttons create clear user actions.</p><a class="btn btn-success" href="#">Contact</a></div></div></div></div><h3 class="mt-4">Scenario</h3><p>A portfolio website can use Bootstrap cards to display projects in a responsive layout.</p></section>
+<section class="container my-5 reveal"><h2 class="mb-4">Example 2: Navbar, Form, and Modal</h2><nav class="navbar navbar-expand-lg bg-body-tertiary rounded shadow-sm px-3 mb-4"><a class="navbar-brand fw-bold" href="#">DemoSite</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#demoNavbar" aria-controls="demoNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="demoNavbar"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link active" href="#">Home</a></li><li class="nav-item"><a class="nav-link" href="#">About</a></li><li class="nav-item"><a class="nav-link" href="#">Contact</a></li></ul></div></nav><form class="row g-3 bg-white border rounded shadow-sm p-3 mb-4"><div class="col-md-6"><label class="form-label" for="bsName">Name</label><input class="form-control" id="bsName" type="text" placeholder="Your name"></div><div class="col-md-6"><label class="form-label" for="bsEmail">Email</label><input class="form-control" id="bsEmail" type="email" placeholder="name@example.com"></div><div class="col-12"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal">Open Confirmation Modal</button></div></form><div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h3 class="modal-title fs-5" id="portfolioModalLabel">Form Confirmation</h3><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">The modal opens correctly using Bootstrap data attributes and Bootstrap JavaScript.</div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button></div></div></div></div><h3 class="mt-4">Scenario</h3><p>A business website can use a responsive navbar, a contact form, and a modal confirmation message.</p></section><section class="content-card reveal references"><h2>References</h2><ul><li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" rel="noopener">Bootstrap Documentation</a></li><li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li><li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li></ul></section></main>
+  <footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <strong>CET138 Assignment</strong>
+      <span>Web Development Portfolio</span>
+    </div>
+    <div class="footer-meta">
+      <span>University of Sunderland</span>
+      <span>Subject: Full Stack Development</span>
+      <span>© 2026 All Rights Reserved</span>
+    </div>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scoped to the demo Bootstrap navbar only: highlights whichever link
+    // the user clicks as the "active" page, so it's always clear which one
+    // is currently selected.
+    (function () {
+      var demoNav = document.getElementById('demoNavbar');
+      if (!demoNav) return;
+      var links = demoNav.querySelectorAll('.nav-link');
+      links.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          links.forEach(function (l) { l.classList.remove('active'); });
+          link.classList.add('active');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
